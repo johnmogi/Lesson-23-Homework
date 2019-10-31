@@ -1,0 +1,19 @@
+const cellPhone = {
+    model: "S9",
+    manufacturer: "Samsung",
+    price: "3K",
+    screen_size: "4.5"
+}
+
+for (obj in cellPhone) {
+    console.log(cellPhone[obj])
+    // console.log(Object.keys(cellPhone))
+    // console.log(obj);
+    //! workaround by converting to array:
+    // var properties = Object.values(cellPhone)
+}
+// console.log(cellPhone.manufacturer, cellPhone.model, cellPhone.obj);
+
+// for (prop of properties) {
+//     console.log(prop)
+// }
