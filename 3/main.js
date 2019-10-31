@@ -31,11 +31,31 @@ const cloths = [
         color: "Angelic White"
     }
 ]
-// let i = 0
-for (set of cloths) {
-    // i++
-    for (obj in set) {
-        console.log("---------*---------")
-        console.log(obj + ": " + set[obj])
+
+// for (set of cloths) {
+//     for (obj in set) {
+//         console.log("---------*---------")
+//         console.log(obj + ": " + set[obj])
+//     }
+// }
+
+
+function returnAvgPrice(arr) {
+    for (arr of cloths) {
+        sum = cloths.reduce((a, b) => (a + b)) / cloths.length;
+        console.log(parseInt(sum))
+        avg = sum / cloths.length;
+        console.log(avg, arr.price)
+
     }
 }
+returnAvgPrice(cloths)
+
+// var sum = 0;
+// for( var i = 0; i < cloths.length; i++ ){
+//     sum += parseInt( arr.price, 10 ); //don't forget to add the base
+// }
+
+// var avg = sum/elmt.length;
+
+// document.write( "The sum of all the elements is: " + sum + " The average is: " + avg );
