@@ -35,18 +35,16 @@ const total = [];
 
 function returnAvgPrice(arr) {
   for (arr of cloths) {
+    // sum += arr.price;
     total.push(arr.price);
   }
 }
 
 returnAvgPrice(cloths);
+// // sumPrices(total);
+// var sumNum = Math.sum.apply(total); // 10
 console.log(total);
-// sumPrices(total);
-var sumTotal = 0;
-for (var i in total) {
-  //   sumTotal += sumTotal[i];
-  console.log(sumTotal);
-}
+
 // console.log(sumTotal);
 // console.log(sumTotal);
 // console.log(
