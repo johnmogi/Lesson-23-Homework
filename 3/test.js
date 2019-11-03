@@ -1,6 +1,11 @@
-let test = ["190", "200", "1000", "500", "8000"];
-function sum(test) {
-  return test.reduce((sum, num) => sum + num, 0);
+var numbers = [1,2,3,4]
+
+var sum = 0;
+
+for(var i = 0; i < numbers.length; i++){
+
+  sum += numbers[i]
+
 }
 
-console.log(test);
+console.log('Your sum is ' + sum);
